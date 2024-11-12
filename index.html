@@ -9,11 +9,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom css -->
      <link rel="stylesheet" href="Styles/style.css">
+     <!-- Font awesome -->
+     <script src="https://kit.fontawesome.com/2b57bc1e88.js" crossorigin="anonymous"></script>
     
 </head>
 <body class="font-poppins">
 
     <main class="min-h-screen bg-no-repeat bg-center bg-[#010313] bg-[url(images/background.png)]">
+        <!-- Home section -->
         <section class="home text-white items-center justify-center  min-h-screen flex flex-col hidden">
            <div class="flex flex-col items-center gap-10">
             <h1 class="text-9xl font-anton">
@@ -23,8 +26,65 @@
                <button class="btn bg-white text-black hover:bg-white">Play Now</button>
            </div>
         </section>
-        <section class="play-ground">
-    
+        <!-- play-ground section -->
+        <section class="play-ground hidden">
+           <div class="flex flex-col items-center gap-20 pt-10">
+            <div class="artboard artboard-horizontal phone-6 border-[14px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+              <div class="flex justify-center">
+                <p class="bg-[#2F2941] p-2 pb-2 rounded-b-xl text-white ">Don't watch keyboard  while playing...</p>
+              </div>
+              <div class="flex justify-center items-center h-full">
+                <p class="text-9xl text-black font-bold">Y</p>
+              </div>
+            </div>
+            <div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div>
+                  <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div>
+                  <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+            <div class="flex justify-between w-3/4">
+                <button class="btn text-xl rounded-full px-6 bg-[#894189] hover:bg-[#894189B3] text-white">
+                    Life
+                    <i class="fa-solid fa-heart-circle-bolt"></i>
+                    <span>1</span>
+                </button>
+                <button class="btn text-xl rounded-full bg-purple-900 hover:bg-purple-950 text-white">
+                    Score
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>1</span>
+                </button>
+            </div>
+           </div>
         </section>
         <section class="score">
             
