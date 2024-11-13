@@ -48,6 +48,10 @@ function handleKeyboardButtonPress(event){
             const element = getScoreAndLifeValueById('current-life');
             const newLife = element - 1;
             setTextElementValueById('current-life', newLife);
+
+            if(newLife === 0){
+                gameOver();
+            }
         }
 }
 
@@ -67,6 +71,14 @@ function continueGame(){
 
 function play(){
     hideElementById('home');
+    hideElementById('final-score')
     showElementById('play-ground');
+    setTextElementValueById('current-life', 5);
+    setTextElementValueById('current-score', 0);
     continueGame();
+}
+
+function gameOver(){
+  hideElementById('play-ground');
+  showElementById('final-score');
 }
