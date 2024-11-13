@@ -81,4 +81,10 @@ function play(){
 function gameOver(){
   hideElementById('play-ground');
   showElementById('final-score');
+
+  const endScore = getScoreAndLifeValueById('current-score');
+  setTextElementValueById('game-end-score', endScore);
+
+  const currentAlphabet = getElementTextById('current-alphabet');
+  removeBackgroundColorById(currentAlphabet);
 }
