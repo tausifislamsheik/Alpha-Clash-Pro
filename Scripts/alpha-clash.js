@@ -8,7 +8,9 @@
 
 function handleKeyboardButtonPress(event){
         const playerPressed = event.key;
-        console.log('player pressed',playerPressed);
+        if(playerPressed === 'Escape'){
+            gameOver();
+        }
 
         const currentAlphabetElement = document.getElementById('current-alphabet');
         const currentAlphabet = currentAlphabetElement.innerText;
