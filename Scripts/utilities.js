@@ -12,6 +12,22 @@ function setBackgroundColorById(elementId){
     const backgroundColor = document.getElementById(elementId);
     backgroundColor.classList.add('bg-orange-500');
 }
+function removeBackgroundColorById(elementId){
+    const backgroundColor = document.getElementById(elementId);
+    backgroundColor.classList.remove('bg-orange-500');
+}
+
+function getScoreAndLifeValueById(elementId){
+    const scoreAndValueElement = document.getElementById(elementId);
+    const scoreAndValueText = scoreAndValueElement.innerText;
+    const scoreAndValue = parseInt(scoreAndValueText);
+    return scoreAndValue;
+}
+
+function setTextElementValueById(elementId, value){
+    const element = document.getElementById(elementId)
+    element.innerText = value;
+}
 
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
